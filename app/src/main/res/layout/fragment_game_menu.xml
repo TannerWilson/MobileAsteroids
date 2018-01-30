@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/galaxy">
+
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|top"
+        android:background="@drawable/galaxy">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Game"
+            android:id="@+id/newGameButton"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="177dp"
+            android:layout_alignStart="@+id/highScoreButton"
+            android:layout_alignEnd="@+id/highScoreButton"
+            android:contextClickable="false"
+            android:clickable="true"
+            android:enabled="true"
+            android:allowUndo="false" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="High Scores"
+            android:id="@+id/highScoreButton"
+            android:layout_alignTop="@+id/newGameButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="77dp"
+            android:clickable="true"
+            android:enabled="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Asteroids"
+            android:id="@+id/title"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="73dp"
+            android:textSize="90dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="#ffffff" />
+
+</RelativeLayout>
